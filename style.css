@@ -8,3 +8,18 @@
 {
     text-align: justify;
 }
+
+.button {
+    color: #000000;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+    .button:hover {
+font-size: 20px;
+  }
+    .button:active{
+    background-color: rgb(255, 100, 100);
+        box-shadow: 3px 5px 0px darkred;
+   }
+

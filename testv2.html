@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -29,7 +29,7 @@
             </td>
         </tr>
     </table>
-    <button onclick="Checkq1()">Проверить</button>
+ 
 
     </body>
 
@@ -53,7 +53,7 @@
                 </td>
             </tr>
         </table>
-        <button onclick="Checkq2()">Проверить</button>
+     
     </body>
 
     <body>
@@ -78,7 +78,7 @@
                 </td>
             </tr>
         </table>
-        <button onclick="Checkq3()">Проверить</button>
+      
     </body>
         
     <body>
@@ -108,7 +108,7 @@
                 </td>
             </tr>
         </table>
-        <button onclick="Checkq4()">Проверить</button>
+  
     </body>
 
     <body>
@@ -138,7 +138,7 @@
                 </td>
             </tr>
         </table>
-        <button onclick="Checkq5()">Проверить</button>
+ 
     </body>
 
     <body>
@@ -152,60 +152,38 @@
 
         <script>
 
-            function Checkq1() {
-                let q1 = document.getElementById('q1');
+  
+function CheckResult(){
+    var result= 0
+    let q1 = document.getElementById('q1');
                 let a1 = document.getElementById('a1');
                 if (a1.value == '3') {
-                    q1.style.border = '1px solid green ';
+                    ++result;
                 }
-                else {
-                    q1.style.border = '1px solid red';
-                }
-            }
-
-            function Checkq2() {
-        let q2 = document.getElementById('q2');
+                let q2 = document.getElementById('q2');
         let a2 = document.getElementById('a2');
         if (a2.value == 'БАГВ') {
-            q2.style.border = '1px solid green ';
+            ++result;
         }
-        else {
-            q2.style.border = '1px solid red';
-        }
-    }
-
-    function Checkq3() {
         let q3 = document.getElementById('q3');
         let a3 = document.getElementById('a3');
         if (a3.value == '2') {
-            q3.style.border = '1px solid green ';
+            ++result;
         }
-        else {
-            q3.style.border = '1px solid red';
-        }
-    }
-
-    function Checkq4() {
         let q4 = document.getElementById('q4');
         let a4 = document.getElementById('a4');
         if (a4.value == 'EFBA') {
-            q4.style.border = '1px solid green ';
+            ++result;
         }
-        else {
-            q4.style.border = '1px solid red';
-        }
-    }
-
-    function Checkq5() {
         let q5 = document.getElementById('q5');
         let a5 = document.getElementById('a5');
         if (a5.value == 'BGFC') {
-            q5.style.border = '1px solid green ';
+            ++result;
         }
-        else {
-            q5.style.border = '1px solid red';
-        }
-    }
+    alert("Ваша оценка: " +result)
+    result=null
+}
+
         </script>
 
 
